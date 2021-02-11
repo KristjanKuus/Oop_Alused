@@ -1,4 +1,3 @@
-from random import randint
 from Sõdur import *
 
 Sodur1 = Sõdur()
