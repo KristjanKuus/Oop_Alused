@@ -4,17 +4,15 @@ class Inimene():
         self.eesnimi = eesnimi
         self.perenimi = perenimi
         self.kutsekvalifikatsioon = kutsekvalifikatsioon
-
-    def __del__(self):
         miini = self.kutsekvalifikatsioon
         miinilist.append(miini)
-        print(miinilist)
-        if min(miinilist) > 0:
+
+    def __del__(self):
+        if self.kutsekvalifikatsioon == min(miinilist):
             print("Kõike head,", str(self.eesnimi) + ",", self.perenimi)
             del self
         else:
-            print("Jätkage!")
+            pass
 
     def tutvustus(self):
         print("Tere, olen", str(self.eesnimi), str(self.perenimi))
-

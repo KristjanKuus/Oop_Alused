@@ -9,4 +9,3 @@ Inimene2.tutvustus()
 Inimene3.tutvustus()
 
 input()
-
