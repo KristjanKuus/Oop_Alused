@@ -26,10 +26,10 @@ class sodur(inimene):
         self.armee = randint(1,2)
 
     def printer(self):
-        print(self.id, self.armee)
+        print(self.id)
 
     def armeeleidja(self):
         if self.armee == 1:
-            armee1.append(str(self))
+            armee1.append(self.id)
         if self.armee == 2:
-            armee2.append(str(self))
+            armee2.append(self.id)
